@@ -1,0 +1,101 @@
+$small: 480px;
+$medium: 1024px;
+
+.leader-card {
+	width: 100%;
+	height: 200px;
+	max-width: 300px;
+	text-align: center;
+	border-radius: 20px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	.rank-image {
+		width: 60px;
+		height: 60px;
+		font-weight: 900;
+		margin: auto;
+		margin-top: -25px;
+		margin-bottom: 20px;
+		border-radius: 50%;
+		font-size: 30px;
+		line-height: 63px;
+	}
+
+	@media screen and (max-width: $medium) and (min-width: $small) {
+		max-width: 250px;
+	}
+	@media screen and (max-width: $small) {
+		max-width: 120px;
+	}
+}
+.landing-page {
+	text-align: center;
+	padding: 50px 0px;
+	.input-form {
+		border-radius: 20px;
+		padding: 40px 200px;
+		.input-form-head {
+			padding: 20px 0px;
+			text-align: left;
+		}
+		.input-form-body {
+			display: flex;
+			padding: 0px;
+			.input-form-select {
+				max-width: 200px;
+				margin: 0px 20px;
+				@media screen and (max-width: $small) {
+					margin: 10px 0px;
+				}
+			}
+			.input-form-button {
+				width: 280px;
+				@media screen and (max-width: $small) {
+					width: 100%;
+				}
+			}
+			@media screen and (max-width: $small) {
+				flex-direction: column;
+				padding: 0px !important;
+				max-width: 200px;
+				margin: auto;
+			}
+		}
+		.input-form-message {
+			text-align: left;
+			@media screen and (max-width: $small) {
+				text-align: center;
+			}
+		}
+		@media screen and (max-width: $small) {
+			padding: 30px;
+		}
+	}
+	.leader-board {
+		display: flex;
+		justify-content: space-between;
+		margin: auto;
+		margin-top: 80px;
+		max-width: 1000px;
+		@media screen and (max-width: $small) {
+			margin: 50px 20px;
+		}
+	}
+}
+.transaction-list {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	max-width: 600px;
+	margin: auto;
+	border-radius: 10px;
+	@media screen and (max-width: $small) {
+		margin: 10px;
+	}
+	.transaction-card {
+		padding: 20px 20px 5px 20px;
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid lightgray;
+		@media screen and (max-width: $small) {
+			flex-direction: column;
+		}
+	}
+}
